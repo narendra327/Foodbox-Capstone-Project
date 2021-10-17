@@ -1,0 +1,13 @@
+2021-10-17 01:37:32 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROMINSERT[*] INTO USERS (ID, EMAIL, PASSWORD, FIRST_NAME, LAST_NAME) VALUES
+(1, 'admin@gmail.com', '$1234', 'Admin', 'admin')"; SQL statement:
+SELECT * FROMINSERT INTO users (id, email, password, first_Name, last_Name) VALUES
+(1, 'admin@gmail.com', '$1234', 'Admin', 'admin') [42000-200]
+2021-10-17 01:37:32 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "USERS[*]"; expected "UPDATE, USE"; SQL statement:
+USERS [42001-200]
+2021-10-17 01:37:50 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROMINSERT[*] INTO USERS (ID, EMAIL, PASSWORD, FIRST_NAME, LAST_NAME) VALUES
+(1, 'admin@gmail.com', '$1234', 'Admin', 'admin')"; SQL statement:
+SELECT * FROMINSERT INTO users (id, email, password, first_Name, last_Name) VALUES
+(1, 'admin@gmail.com', '$1234', 'Admin', 'admin') [42000-200]

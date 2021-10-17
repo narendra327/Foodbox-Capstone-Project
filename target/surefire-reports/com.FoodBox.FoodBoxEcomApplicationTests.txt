@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: com.FoodBox.FoodBoxEcomApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 10.188 s <<< FAILURE! - in com.FoodBox.FoodBoxEcomApplicationTests
+UserTest  Time elapsed: 0.08 s  <<< ERROR!
+org.springframework.dao.DataIntegrityViolationException: 
+could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_6DOTKOTT2KJSP8VW4D0M25FB7_INDEX_4 ON PUBLIC.USERS(EMAIL) VALUES 42"; SQL statement:
+insert into users (email, first_name, last_name, password, id) values (?, ?, ?, ?, ?) [23505-200]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at com.FoodBox.FoodBoxEcomApplicationTests.UserTest(FoodBoxEcomApplicationTests.java:74)
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at com.FoodBox.FoodBoxEcomApplicationTests.UserTest(FoodBoxEcomApplicationTests.java:74)
+Caused by: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: 
+Unique index or primary key violation: "PUBLIC.UK_6DOTKOTT2KJSP8VW4D0M25FB7_INDEX_4 ON PUBLIC.USERS(EMAIL) VALUES 42"; SQL statement:
+insert into users (email, first_name, last_name, password, id) values (?, ?, ?, ?, ?) [23505-200]
+	at com.FoodBox.FoodBoxEcomApplicationTests.UserTest(FoodBoxEcomApplicationTests.java:74)
+
